@@ -12,6 +12,7 @@ services:
             - "9944:9944"
         volumes: 
             - ./start_services.sh:/start_services.sh
+            - ./bucket:/bucket
         #command: "bash /start_services.sh"
         command: "bash /start_services.sh"
 

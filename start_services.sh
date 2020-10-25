@@ -9,7 +9,7 @@ nohup /app-dev/substrate-node-template/target/release/node-template --dev --ws-e
 sleep 15s
 
 
-cd /app-dev/substrate-front-end-template #&& yarn start
+cd /app-dev/substrate-front-end-template #&& yarn start --verbose
 
 yarn start
 
