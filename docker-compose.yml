@@ -7,7 +7,11 @@ services:
             context: dockerfiles
             dockerfile: Dockerfile 
         container_name: hello-polkadot 
-        port: 
-            - "8001:8000"
-        command: "bash"
+        ports: 
+            - "8000:8000"
+            - "9944:9944"
+        volumes: 
+            - ./start_services.sh:/start_services.sh
+        #command: "bash /start_services.sh"
+        command: "bash /start_services.sh"
 

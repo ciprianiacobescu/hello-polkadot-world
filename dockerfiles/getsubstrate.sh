@@ -64,6 +64,7 @@ fi
 if ! which rustup >/dev/null 2>&1; then
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	source ~/.cargo/env
+	export PATH="/root/.cargo/bin:$PATH"
 	rustup default stable
 else
 	rustup update
